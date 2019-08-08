@@ -1,4 +1,4 @@
-# webpack热更新
+# webpack
 
 ## 热更新过程
 
@@ -14,3 +14,7 @@
 2. webpack.config的devServer中配置hot: true
 3. webpack.config的plugins增加HotModuleReplacementPlugin
 4. 使用module.hot.accept增加HMR代码
+
+## 谈谈webpack
+
+webpack是一个模块打包工具，通过编译输出静态文件

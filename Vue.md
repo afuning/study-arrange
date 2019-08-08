@@ -74,3 +74,34 @@ function sameInputType (a, b) {
 3. 如果老节点没有子节点而新节点存在子节点，先清空老节点DOM的文本内容，然后为当前DOM节点加入子节点。
 4. 当新节点没有子节点而老节点有子节点的时候，则移除该DOM节点的所有子节点。
 5. 当新老节点都无子节点的时候，只是文本的替换。
+
+## Vuex原理
+
+1. 将Store存在根节点中$store属性
+2. 当组件中要获取store时，会判断是否为根组件，如果不是，则向parent组件获取store
+3. Vuex使用的是Vue内部的双向绑定元原理来实现响应化
+
+
+## key的作用
+diff算法会根据key去判断值是否改变，如果修改则复用之前的元素。如果key值改编的话则会重新渲染这条数据
+
+## v-show是怎么实现的
+
+通过js改变当前标签的style：display: none; 若为true则清除display属性
+
+## 生命周期
+
+1. new Vue()
+2. 初始化event，生命周期
+3. beforeCreate
+4. 初始化injections&reactivity
+5. created
+6. beforeMount
+render
+7. mounted
+8. beforeUpdate
+9. updated
+10. beforeDestory
+11. destoryed
+
+
