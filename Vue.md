@@ -81,9 +81,9 @@ function sameInputType (a, b) {
 2. 当组件中要获取store时，会判断是否为根组件，如果不是，则向parent组件获取store
 3. Vuex使用的是Vue内部的双向绑定元原理来实现响应化
 
-
 ## key的作用
-diff算法会根据key去判断值是否改变，如果修改则复用之前的元素。如果key值改编的话则会重新渲染这条数据
+
+可以通过key来快速查找到对应节点，提高diff速度。首先会判断新旧节点的key是否相同，相同则继续对比节点属性
 
 ## v-show是怎么实现的
 
@@ -103,5 +103,3 @@ render
 9. updated
 10. beforeDestory
 11. destoryed
-
-

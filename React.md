@@ -6,6 +6,8 @@
 
 ## diff算法
 
+新旧DOM对比是通过diff算法来决定哪些DOM需要被更新。时间复杂度为O(n^3)。而React提出了一套O(n)的启发式算法
+
 ## JSX
 
 JSX是javascript的语法扩展，结合了HTML和javascript.
@@ -23,3 +25,7 @@ JSX是javascript的语法扩展，结合了HTML和javascript.
 
 1. 外部样式表：如import './App.css'; 或者import style from './App.css'; className={style.XXX}
 2. 内联样式：如style={{backgroundColor: 'red'}}
+
+## 什么是Redux及其工作原理
+
+是React的一个状态管理库。用于组件之间共享一个数据源

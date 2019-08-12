@@ -18,3 +18,6 @@
 ## 谈谈webpack
 
 webpack是一个模块打包工具，通过编译输出静态文件
+
+## code splitting
+
